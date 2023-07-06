@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Number :  <input type="number" min="-10" max="10">
+        Range :  <input type="range" min="-10" max="10">
+        <input type="submit">
+
+        <hr>
+        Name : <input type="text" placeholder="Enter your name"> <br>
+
+        Password : <input type="password" minlength="5" maxlength="10">
+        <br>
+
+        <hr>
+        ID : <input type="text" placeholder="Enter your name"> <br>
+
+
+        <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" -->
+        Code : <input type="password" pattern="[A-Za-z]{3}" title="Example : AbC">
+        <br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

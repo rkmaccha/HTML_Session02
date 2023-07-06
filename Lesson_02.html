@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get-Post</title>
+</head>
+<body>
+
+    <!-- 
+        GET sends the data as a part of the URL 
+        Appends data into URL 
+        Never use GET if you have password or any sensitve data to be sent to the server  
+        Get cant used to send binary data like images, word docs
+    -->
+    <hr>
+    <form action="Actions.html" method="GET">
+        <h1>GET REGISTRATION</h1>
+        Name : <input type="text" name="name"> <br>
+        Password : <input type="password" name="password"> <br>
+
+        Email : <input type="email" name="email"> <br>
+        <input type="submit">
+
+    </form>
+    <br>
+    <br>
+    <hr>
+
+        <!-- 
+        POST 
+        Appends data inside the body of HTTP request ( data is not shown in URL)
+        If you have password or any sensitve data to be sent to the server we should use POST
+        Can be used to send binary or ascii data like images, word docs
+        data sent by POST method goes through HTTP header so security depends on HTTP protocol. 
+        By using secure HRRP protocols you can make sure the data is secure.
+    -->
+
+    <form action="/Actions.html" method="POST">
+        <h1>POST REGISTRATION</h1>
+        Name : <input type="text" name="name"> <br>
+        Password : <input type="password" name="password"> <br>
+       <input type="submit">
+    </form>
+    <br>
+    <br>
+    <hr>
+
+    <form action="Actions.html"  >
+        <!-- <form action="Actions.html" novalidate ></form> -->
+        <h1>Validate - Novalidate </h1>
+
+        <!-- autofocus, disabled , -->
+        Name : <input type="text" name="name" autofocus> <br>
+        Password : <input type="password" name="password"> <br>
+
+        Email : <input type="email" name="email" required> <br>
+
+        <!-- image/* to upload any format image files -->
+        Upload Image : <input type="file" name="file" accept=".png"> <br>
+        <input type="submit" value="submit">
+        <input type="submit" value="save" formnovalidate>
+    </form>
+    <br>
+
+</body>
+</html>
